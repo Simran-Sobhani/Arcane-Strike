@@ -1,0 +1,144 @@
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 6.5rem;
+  left: 2rem;
+  width: 10rem;
+  height: calc(100% - 6.5rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.5rem 1rem;
+  z-index: 200;
+  background: rgba(255, 255, 255, 0.03);
+  border: var(--BORDER);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(254, 193, 70, 0.08);
+}
+
+/* Sidebar links */
+.sidebar-link {
+  font-family: var(--FF-MID);
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--GOLD);
+  padding: 0.7rem 0.8rem;
+  text-align: center;
+  border: 1px solid rgba(254, 193, 70, 0.4);
+  border-radius: 8px;
+  background: rgba(254, 193, 70, 0.05);
+  letter-spacing: 1px;
+  transition: all 0.25s ease;
+}
+
+/* Sidebar link hover */
+.sidebar-link:hover {
+  background: var(--GOLD);
+  color: var(--BLACK);
+  box-shadow: 0 0 20px rgba(254, 193, 70, 0.9);
+  transform: translateX(5px);
+}
+
+/* Sidebar active */
+.sidebar-link:active,
+.sidebar-link:focus {
+  background: var(--AQUAMARINE);
+  color: var(--BLACK);
+  border-color: var(--AQUAMARINE);
+  box-shadow: 0 0 15px rgba(79, 225, 174, 0.8);
+  transform: translateX(5px);
+}
+
+/* Agents layout wrapper */
+.agents-wrapper {
+  margin-left: 300px;
+  padding: 3rem 4rem;
+}
+
+/* Agent section */
+.agent-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin: 5rem 0;
+  padding: 5rem 0;
+  border-top: var(--BORDER);
+  border-bottom: var(--BORDER);
+}
+
+/* Agent text box */
+.agent-text {
+  margin-left: 18rem;
+  margin-top: 5rem;
+  max-width: 25rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: rgba(182, 182, 182, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Agent name */
+.agent-name {
+  font-family: var(--FF-HEAD);
+  font-size: 2.8rem;
+  color: var(--GOLD);
+}
+
+/* Agent title */
+.agent-title {
+  font-size: 1.3rem;
+  color: var(--RED);
+  font-family: var(--FF-MID);
+  margin-bottom: 1rem;
+}
+
+/* Bio */
+.agent-bio {
+  margin-bottom: 1.5rem;
+}
+
+/* Abilities header */
+.abilities h4 {
+  font-size: 1.2rem;
+  color: var(--AQUAMARINE);
+  font-family: var(--FF-MID);
+  margin-bottom: 0.6rem;
+}
+
+/* Ability list */
+.abilities ul {
+  list-style: none;
+}
+
+/* Ability item */
+.abilities li {
+  margin-bottom: 0.6rem;
+  color: #ccc;
+}
+
+.abilities li strong {
+  font-family: var(--FF-MID);
+  color: var(--AQUAMARINE);
+}
+
+/* Agent backgrounds */
+#sylara { background-image: url('assets/sylara.png'); background-size: cover; }
+#kael   { background-image: url('assets/agent-1.png'); background-size: cover; }
+#lira   { background-image: url('assets/agent-2.png'); background-size: cover; }
+#raik   { background-image: url('assets/agent-3.png'); background-size: cover; }
+#nyx    { background-image: url('assets/agent-4.png'); background-size: cover; }
+#tharos { background-image: url('assets/agent-5.png'); background-size: cover; }
+
+/* Footer */
+.footer-title {
+  font-family: var(--HEAD);
+  color: var(--GOLD);
+}
+
+.footer-tagline {
+  font-family: var(--MID);
+}

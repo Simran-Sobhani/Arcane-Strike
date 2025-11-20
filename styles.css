@@ -113,7 +113,6 @@ body {
   display: none;
 }
 
-
 .hamburger {
   display: none;
   flex-direction: column;
@@ -242,6 +241,7 @@ body {
     padding: 1.5rem 0;
     border-top: var(--BORDER);
     display: none;
+    text-align: center;
   }
 
   .hamburger {

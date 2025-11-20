@@ -382,17 +382,174 @@
 }
 
 @media (max-width: 900px) {
+  /* HERO */
+  .hero-title {
+    font-size: 4.5rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.5rem;
+  }
+
+  .hero-container {
+    margin-bottom: 8vh;
+  }
+
+  /* NEWS */
   .news-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ABOUT */
+  .about-container {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .about-content {
+    font-size: 1rem;
+  }
+
+  /* AGENTS */
+  .agents-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .featured-agent img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .featured-agent .agent-name {
+    font-size: 1.6rem;
+  }
+
+  .agent-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1.2rem;
+  }
+
+  .agent-card img {
+    height: auto;
+    object-fit: cover;
+  }
+
+  .agent-name {
+    font-size: 1.1rem;
+  }
+
+  .agent-class {
+    font-size: 0.85rem;
+  }
+
+  .maps-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  /* MAPS */
+  .maps-image img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
+
+  .maps-info {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .maps-info h3 {
+    font-size: 1.8rem;
+  }
+
+  .maps-info p {
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 600px) {
+  /* HERO */
+  .hero {
+    height: 85vh;
+    background-position: center top;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+  }
+
+  .hero-tagline {
+    font-size: 1.3rem;
+  }
+
+  .hero-container {
+    margin-bottom: 6vh;
+  }
+
+  .hero-btn {
+    font-size: 1.2rem;
+    padding: 10px 22px;
+  }
+
+  /* NEWS */
   .news-container {
     grid-template-columns: 1fr;
   }
 
   .news-card {
     max-width: 100%;
+  }
+
+  /* ABOUT */
+  .about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-image {
+    order: -1;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .about-title {
+    font-size: 1.6rem;
+    white-space: nowrap;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+
+  /* MAPS */
+  .maps-section {
+    width: 95%;
+    padding: 4rem 0;
+  }
+
+  .maps-container {
+    padding: 1rem;
+  }
+
+  .maps-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .map-btn {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 12px;
   }
 }

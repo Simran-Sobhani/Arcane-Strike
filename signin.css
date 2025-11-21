@@ -1,11 +1,12 @@
 body {
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(30, 0, 0, 0.9)), url('assets/arcane-strike-hero.png') no-repeat center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: var(--FF-BODY);
     color: var(--LAVENDER-BLUSH);
+    padding: 1rem;
 }
 
 .signin-container {
@@ -21,6 +22,7 @@ body {
     border-radius: 10px;
     padding: 2.5rem;
     width: 400px;
+    max-width: 100%;
     text-align: center;
     box-shadow: 0 0 20px rgba(255, 35, 35, 0.2);
 }
@@ -100,3 +102,50 @@ body {
 .signup-text a:hover {
     color: var(--RED);
 }
+
+@media (max-width: 900px) {
+    .signin-card {
+        padding: 2rem;
+        width: 90%;
+    }
+
+    .signin-title {
+        font-size: 2rem;
+    }
+
+    .signin-subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    .signin-card {
+        padding: 1.5rem;
+    }
+
+    .signin-title {
+        font-size: 1.6rem;
+    }
+
+    .signin-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .signin-form input {
+        padding: 0.7rem;
+    }
+
+    .signin-btn {
+        font-size: 0.95rem;
+        padding: 0.7rem;
+    }
+
+    .signup-text {
+        font-size: 0.85rem;
+    }
+}
+
